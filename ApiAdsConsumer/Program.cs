@@ -16,12 +16,12 @@ namespace ApiAdsConsumer
     class Program
     {
 
-        // ------------------------------------TEST VARIALBES
+        // ------------------------------------TEST VARIALBES -------[CHANGE THESE]
         public static string TimeOut = "20";
         public static string location = "7399";
         public static List<string> accounts = new List<string>() { "4715101", "3283466", "5455467", "7886" };
 
-        // -----------------------------------NO NEED TO CHANGE
+        // ----------------------------------- [DO NOT CHANGE]
         public static string Path = string.Format(@"..\..\Results\test_{0}_secondesTimeOut.csv",TimeOut);
 
 
