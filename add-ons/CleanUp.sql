@@ -1,0 +1,26 @@
+/*------------------------------------DELETE---------------------------------------------------*/
+delete from pbpmemberdevice.devices t where t.deviceuuid = '2f3c4db467453b72203ecb54cb79d18ab7cba2d030deeaa69bc184b15db24102'; 
+delete from pbpmemberdevice.devices t;
+delete from pbpmemberdevice.devices t where t.wavepaymemberid = 7886;
+delete from pbpmembernotification.feeds t where t.wavepaymemberid = 7886;
+delete from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 7886;
+delete from pbpmemberdevice.devices t where t.wavepaymemberid = 4715101;
+delete from pbpmembernotification.feeds t where t.wavepaymemberid = 4715101;
+delete from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 4715101;
+delete from pbpmemberdevice.devices t where t.wavepaymemberid = 5455467;
+delete from pbpmembernotification.feeds t where t.wavepaymemberid = 5455467;
+delete from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 5455467;
+delete from pbpmemberdevice.devices t where t.wavepaymemberid = 3283466;
+delete from pbpmembernotification.feeds t where t.wavepaymemberid = 3283466;
+delete from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 3283466;
+/*---------------------------------------GroupSelection----------------------------------------*/
+select * from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 7886;
+select * from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 4715101;
+select * from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 5455467;
+select * from pbpmemberdevice.memberdevicetokens t where t.wavepaymemberid = 3283466;
+
+
+select * from pbpmembernotification.feeds t where t.wavepaymemberid = 7886 and t.content_type = 'Special Offer'order by t. time_stamp desc;
+select * from pbpmembernotification.feeds t where t.wavepaymemberid = 4715101 and t.content_type = 'Special Offer'order by t. time_stamp desc;
+select * from pbpmembernotification.feeds t where t.wavepaymemberid = 5455467 and t.content_type = 'Special Offer'order by t. time_stamp desc;
+select * from pbpmembernotification.feeds t where t.wavepaymemberid = 3283466 and t.content_type = 'Special Offer'order by t. time_stamp desc;
