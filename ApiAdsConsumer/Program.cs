@@ -271,21 +271,13 @@ namespace ApiAdsConsumer
     public class PostParkingSession
     {
         public int WavePayMemberId { get; set; }
-
         public string LocationNumber { get; set; }
-
         public string AccountNumber { get; set; }
-
         public decimal AmountCharged { get; set; }
-
         public string Language { get; set; }
-
         public string StartTimeRfc3339 { get; set; }
-
         public string EndTimeRfc3339 { get; set; }
-
         public bool ConsentToOffers { get; set; }
-
         public bool ConsentToAlerts { get; set; }
     }
 
